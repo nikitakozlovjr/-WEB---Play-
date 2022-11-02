@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Угадай число</title>
+</head>
+<body>
+  <header>
+    <nav class="navigation">
+      <a href="#">Главная</a>
+      <a href="#">Правила игры</a>
+      <a href="#">О нас</a>
+      <a href="#">Еще наши игры</a>
+    </nav>
+  </header>
+
+  <div class="flex-container">
+    <section class="difficlt">
+      <h2>Уровни сложности</h2>
+        <a href="#a1" id="a1" class="first">от 1 до 100</a>
+        <a href="#a2" id="a2" class="second">от 1 до 250</a>
+        <a href="#a3" id="a3" class="three">от 1 до 500</a>
+        <a href="#a4" id="a4" class="four">от 1 до 750</a>
+        <a href="#a5" id="a5" class="cilcle five">от 1 до 1000</a>
+    </section>
+  
+    <main class="play-field">
+    <div class="first">
+      <h1 class="play-name"><span>У</span><span>г</span><span>а</span><span>д</span><span>а</span><span>й</span><a> </a><span>ч</span><span>и</span><span>с</span><span>л</span><span>о</span></h1>
+    </div>
+    <div class="second">
+        <section class="card-play">
+           <input type="number" min="1" max="100" class ="attempField">
+           <br>
+           <input type="submit" value="Угадать" class="submitAttemp">
+        </section>
+
+        <section class="resultParas">
+          <p class="stillAttemp">Осталось попыток: <span class="attempCountUser">10</span></p>
+          <p class="guesses">Последняя попытка: <span class="lastattemp"></span></p>
+          <p class="result">Результат: <span class="resultOffer"></span></p>
+          <p class="help"></p><br>
+          <input type="submit" class="reversesubmit" value="Играть снова">
+        </section>
+      </div>
+    </main>
+  </div>
+
+
+    <script src="game-logic.js"></script>
+</body>
+</html>
